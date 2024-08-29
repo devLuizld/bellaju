@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão para o corpo do texto */
+   background-color: rgb(32, 30, 30);
+    background-attachment: fixed;
+     
+}
+/* Estilos para diferentes tamanhos de tela */
+@media (max-width: 1200px) 
+    .container {
+        padding: 0 15px; /* Menos espaçamento em telas menores */
+    }
+
+    @media (max-width: 992px) 
+        .container {
+            padding: 0 10px; /* Menos espaçamento em telas menores */
+        }
+
+        @media (max-width: 576px) {
+            body {
+                font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+            }
+        
+            .container {
+                padding: 0; /* Remove espaçamento em telas menores */
+            }
+        }
+
+        #principal{
+            font-family: 'Playfair Display', serif; /* Fonte para o título princial*/
+            text-align: center; /* Alinha o texto centralmente */
+            padding: 20px; /* Adiciona um pouco de espaço ao redor */
+            font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
+            margin: 0; /* Remove a margem padrão */
+           color: rgb(245, 3, 108);
+           margin-bottom: -70px;
+        
+           text-shadow:
+           1px 1px 0 #cccccc, /* Contorno preto para a parte superior direita */
+          -1px -1px 0  #cccccc, /* Contorno preto para a parte inferior esquerda */
+           1px -1px 0  #cccccc, /* Contorno preto para a parte inferior direita */
+          -1px 1px 0  #cccccc; /* Contorno preto para a parte superior esquerda */
+        }
+
+/* Estilos para a galeria de produtos  */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 100px 0; /* Ajusta o espaçamento ao redor da galeria */
+}
+
+
+.item-produto  {
+    width: 300px; /* Largura fixa para cada item */
+    height: 300px; /* Altura fixa para cada item */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(240, 60, 135, 0.982);
+    transition: transform 0.3s ease;
+}
+
+.item-produto img {
+    width: 100%; /* Ajusta a imagem para preencher o contêiner */
+    height: 80%; /* Ajusta a altura da imagem para preencher o contêiner */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre o contêiner */
+    transition: transform 0.15s ease;
+}
+
+.item-produto:hover {
+    transform: scale(1.4);
+}
+
+.item-produto img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para o container de informações do produto  */
+.info-produto{
+    background-color: #e5c7da; /* Cor de fundo para o texto */
+    padding: 10px; /* Espaçamento interno */
+    border-top: 1px solid #ddd; /* Linha de separação entre imagem e texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o nome do produto */
+.nome-produto{
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
+    color: #333; /* Cor do texto do nome do projeto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+    font-weight: bold; /* Negrito para destacar o texto */
+}
+
+.btn{
+    width: 90px;
+   height:  50px;
+ display: inline-block;
+
+   padding: 10px 20px; /* Adiciona espaço interno ao botão */
+   font-size: 15px; /* Ajusta o tamanho da fonte */
+   text-align: center;
+   color: antiquewhite;
+   background-color: rgb(255, 17, 211); /* Cor de fundo do botão */
+   border: none; /* Remove a borda padrão */
+   border-radius: 10px;
+   cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+
+
+}
+
+.btn:hover{
+    background-color: #030303;
+    transform: scale(1.05); /* Aumenta o botão ligeiramente ao passar o mouse */
+}
+.btn{
+    font-weight: bold; /* Torna o texto mais grosso */
+    text-align: center;
+    
+   
+}
+.container {
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza horizontalmente o botão */
+    align-items: center; /* Centraliza verticalmente o botão  */
+   
+}
+   
