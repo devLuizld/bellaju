@@ -1,164 +1,220 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento padrão */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão para o corpo do texto */
-    background-image: linear-gradient(to top,#ca8987,#d7a2a0,#e5bbb8,#f2d3d1,#ffece9);
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimento padrão */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Fonte padrão para o corpo do texto */
+    background-image: linear-gradient(to top, #ca8987, #d7a2a0, #e5bbb8, #f2d3d1, #ffece9);
     background-attachment: fixed;
-     
+
 }
+
 /* Estilos para diferentes tamanhos de tela */
-@media (max-width: 1200px) 
-    .container {
-        padding: 0 15px; /* Menos espaçamento em telas menores */
+@media (max-width: 1200px) .container {
+    padding: 0 15px;
+    /* Menos espaçamento em telas menores */
+}
+
+@media (max-width: 992px) .container {
+    padding: 0 10px;
+    /* Menos espaçamento em telas menores */
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte para telas menores */
     }
 
-    @media (max-width: 992px) 
-        .container {
-            padding: 0 10px; /* Menos espaçamento em telas menores */
-        }
-
-        @media (max-width: 576px) {
-            body {
-                font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
-            }
-        
-            .container {
-                padding: 0; /* Remove espaçamento em telas menores */
-            }
-        }
+    .container {
+        padding: 0;
+        /* Remove espaçamento em telas menores */
+    }
+}
 
 
- #principal{
-    font-family: 'Playfair Display', serif; /* Fonte para o título princial*/
-    text-align: center; /* Alinha o texto centralmente */
-    padding: 20px; /* Adiciona um pouco de espaço ao redor */
-    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
-    margin: 0; /* Remove a margem padrão */
-   color: rgb(245, 3, 108);
-   margin-bottom: -70px;
+#principal {
+    font-family: 'Playfair Display', serif;
+    /* Fonte para o título princial*/
+    text-align: center;
+    /* Alinha o texto centralmente */
+    padding: 20px;
+    /* Adiciona um pouco de espaço ao redor */
+    font-size: 3rem;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0;
+    /* Remove a margem padrão */
+    color: rgb(245, 3, 108);
+    margin-bottom: -70px;
 
-   text-shadow:
-   1px 1px 0 #000, /* Contorno preto para a parte superior direita */
-  -1px -1px 0 #000, /* Contorno preto para a parte inferior esquerda */
-   1px -1px 0 #000, /* Contorno preto para a parte inferior direita */
-  -1px 1px 0 #000; /* Contorno preto para a parte superior esquerda */
+    text-shadow:
+        1px 1px 0 #000,
+        /* Contorno preto para a parte superior direita */
+        -1px -1px 0 #000,
+        /* Contorno preto para a parte inferior esquerda */
+        1px -1px 0 #000,
+        /* Contorno preto para a parte inferior direita */
+        -1px 1px 0 #000;
+    /* Contorno preto para a parte superior esquerda */
 }
 
 
 .wpp {
-    font-family:'Poppins', sans-serif, Arial, Helvetica ;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica;
     font-size: 1.5rem;
-  
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do título */
     color: rgb(23, 23, 23);
-    
+    text-align: center;
 }
 
 
-.imgr1{
-    width: 50px; /* Ajusta a largura da imagem */
-    height: 50px; /* altura*/
-    border-radius: 50%; /* Torna a imagem redonda */
-    border: 2px solid #25D366; /* Adiciona uma borda verde do WhatsApp */
-
+.imgr1 {
+    width: 50px;
+    /* Ajusta a largura da imagem */
+    height: 50px;
+    /* altura*/
+    border-radius: 50%;
+    /* Torna a imagem redonda */
+    border: 2px solid #25D366;
+    /* Adiciona uma borda verde do WhatsApp */
+    display: block;
+    margin: 0 auto;
 }
 
-.imgr1:hover{
-    transform: scale(1.1); /* Adiciona uma transição suave para o efeito de hover */
+.imgr1:hover {
+    transform: scale(1.1);
+    /* Adiciona uma transição suave para o efeito de hover */
 }
-.ico{
-    font-size: 0.6rem;  
+
+.ico {
+    font-size: 0.6rem;
     color: black;
-    text-decoration: none; /* Remove o sublinhado dos links */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+
 }
+
 .wpp {
+    text-align: center;
     background-color: #ff83bd;
 }
-.titulo3{
+
+.titulo3 {
     font-family: Arial, Helvetica, sans-serif;
-   color: black;
- font-weight: 900;
-}
-
-.tex{
-
-font-family: 'Roboto', sans-serif;
-font-size: 1.2rem;
-text-align: justify;
-background-color: #f2d3d1;
-}
-
-.imagemcp{
-right: auto;
-}
-
-
-.btn{
-    width: 90px;
-   height:  50px;
- display: inline-block;
-
-   padding: 10px 20px; /* Adiciona espaço interno ao botão */
-   font-size: 15px; /* Ajusta o tamanho da fonte */
-   text-align: center;
-   color: antiquewhite;
-   background-color: black; /* Cor de fundo do botão */
-   border: none; /* Remove a borda padrão */
-   border-radius: 10px;
-   cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
-
-
-}
-
-.btn:hover{
-    background-color: #f70783;
-    transform: scale(1.05); /* Aumenta o botão ligeiramente ao passar o mouse */
-}
-.btn{
-    font-weight: bold; /* Torna o texto mais grosso */
+    color: black;
+    font-weight: 900;
     text-align: center;
-    
-   
 }
+
+.tex {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    background-color: #f2d3d1;
+}
+
+.imagemcp {
+    right: auto;
+}
+
+
+.btn {
+    width: 90px;
+    height: 50px;
+    display: inline-block;
+
+    padding: 10px 20px;
+    /* Adiciona espaço interno ao botão */
+    font-size: 15px;
+    /* Ajusta o tamanho da fonte */
+    text-align: center;
+    color: antiquewhite;
+    background-color: black;
+    /* Cor de fundo do botão */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 10px;
+    cursor: pointer;
+    /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+
+
+}
+
+.btn:hover {
+    background-color: #f70783;
+    transform: scale(1.05);
+    /* Aumenta o botão ligeiramente ao passar o mouse */
+}
+
+.btn {
+    font-weight: bold;
+    /* Torna o texto mais grosso */
+    text-align: center;
+
+
+}
+
 .container {
-    display: flex; /* Define o layout como flexbox */
-    justify-content: center; /* Centraliza horizontalmente o botão */
-    align-items: center; /* Centraliza verticalmente o botão  */
-   
+    display: flex;
+    /* Define o layout como flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente o botão */
+    align-items: center;
+    /* Centraliza verticalmente o botão  */
+
 }
+
 .Endereço {
-    float: right; /* Posiciona o elemento à direita do contêiner pai */
-    margin: 15px; /* Adiciona alguma margem ao redor do bloco */
+    float: right;
+    /* Posiciona o elemento à direita do contêiner pai */
+    margin: 15px;
+    /* Adiciona alguma margem ao redor do bloco */
 }
 
 .imagemcp {
     /* Define a largura e a altura do contêiner */
-    width: 100%; /* Ajuste conforme necessário */
-    max-width: 1200px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner */
-    text-align: center; /* Alinha a imagem no centro */
-  }
+    width: 100%;
+    /* Ajuste conforme necessário */
+    max-width: 1200px;
+    /* Largura máxima do contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner */
+    text-align: center;
+    /* Alinha a imagem no centro */
+}
 
-  .imagemcp img {
-    width: 100%; /* A imagem preencherá a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    max-height: 430px; /* Ajuste a altura máxima conforme necessário */
-    object-fit: cover; /* Ajusta a imagem dentro do contêiner sem distorcer */
+.imagemcp img {
+    width: 100%;
+    /* A imagem preencherá a largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse a largura do contêiner */
+    max-height: 430px;
+    /* Ajuste a altura máxima conforme necessário */
+    object-fit: cover;
+    /* Ajusta a imagem dentro do contêiner sem distorcer */
     border-radius: 30px;
-  }
+}
 
 
 
-  .Endereço:hover{
+.Endereço:hover {
     transform: scale(1.09);
     color: rgb(254, 7, 192);
     cursor: pointer;
-  }
-  .Endereço{
+}
+
+.Endereço {
     font-size: 0.8rem;
     font-weight: bold;
-  }
+}
